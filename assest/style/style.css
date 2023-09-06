@@ -1,0 +1,170 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	  background-color: black;
+}
+
+/*  global style */
+.earth-line,
+.moon-line,
+.jupiter-line,
+.mars-line,
+.saturn-line,
+.neptune-line,
+.uranus-line
+{  position: absolute;
+	left: 50%;
+	transform: translate(50%,50%);
+    border-radius: 100%;
+    border: 1px solid gray;
+}
+.circle{
+    position: absolute;
+	transform: translate(50%,50%);
+	border-radius: 100%;
+	transition: 0.5s;
+}
+.circle:hover p{
+	display: block;
+}
+/* ayri ayri elementlerin style */
+.sun{
+	position: absolute;
+	top: 40%;
+	left: 40%;
+	transform: translate(50%,50%);
+	width: 70px;
+	height: 70px;
+	border-radius: 100%;
+	background-color: gold;
+	box-shadow: 0px 0px 25px 2px yellow;
+}
+
+.earth-line{
+  width: 140px;
+  height: 140px;
+  left: 40%;
+  top: 40%;
+   animation: MoveEarth 9s linear infinite; 
+}
+.earth-line .earth{
+	top: 68%;
+	width: 20px;
+	height: 20px;
+	background-color: red;
+}
+
+.moon-line{
+	width: 200px;
+	height: 200px;
+	left: 38%;
+	top: 36%;
+  animation: MoveMoon 7s linear infinite;
+}
+.moon-line .moon{
+	top: 68%;
+	width: 20px;
+	height: 20px;
+	background-color: orange;
+}
+
+.jupiter-line{
+  width: 280px;
+  height: 280px;
+  left: 35%;
+  top: 30%;
+  animation: MoveJupiter 15s linear infinite;
+}
+.jupiter-line .jupiter{
+	top: 70%;
+	width: 30px;
+	height: 30px;
+	background-color: darkmagenta;
+}
+
+.mars-line{
+	width: 370px;
+    height: 370px;
+    left: 32%;
+    top: 23%;
+	animation: MoveMars 30s linear infinite;
+}
+.mars-line .mars{
+	top: 70%;
+	width: 40px;
+	height: 40px;
+	background-color:cornflowerblue;
+}
+
+.saturn-line{
+	width: 480px;
+	height: 480px;
+	left: 28%;
+    top: 15%;
+	animation:MoveSaturn 50s linear infinite;
+}
+.saturn-line .saturn{
+	top: 70%;
+	width: 50px;
+	height: 50px;
+	background-color:yellowgreen;
+}
+
+@keyframes MoveEarth {
+	0%
+	{
+		transform: rotate(0);
+	}
+	100%
+	{
+      transform: rotate(360deg);
+	}
+}
+
+@keyframes MoveMoon {
+	0%
+	{
+		transform: rotate(0);
+	}
+	100%
+	{
+      transform: rotate(360deg);
+	}
+}
+
+@keyframes MoveJupiter {
+	0%
+	{
+		transform: rotate(0);
+	}
+	100%
+	{
+      transform: rotate(360deg);
+	}
+}
+
+@keyframes MoveMars {
+	0%
+	{
+		transform: rotate(0);
+	}
+	100%
+	{
+      transform: rotate(360deg);
+	}
+}
+
+@keyframes MoveSaturn {
+	0%
+	{
+		transform: rotate(0);
+	}
+	100%
+	{
+      transform: rotate(360deg);
+	}
+}
